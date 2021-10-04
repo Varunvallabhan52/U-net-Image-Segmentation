@@ -22,7 +22,13 @@ public static void whenWriteStringUsingBufferedWritter_thenCorrect()
 
 public static void main(String []args) {
       System.out.println("Hello World");
-      whenWriteStringUsingBufferedWritter_thenCorrect();
+      try{
+        whenWriteStringUsingBufferedWritter_thenCorrect();
+      } catch (IOException e) {
+        System.out.println(e);
+      }
+  
+      
    }
 
 }
