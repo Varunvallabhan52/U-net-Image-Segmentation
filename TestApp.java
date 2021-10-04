@@ -5,12 +5,19 @@ public class TestApp{
 
 public static void whenWriteStringUsingBufferedWritter_thenCorrect() 
   throws IOException {
-    String str = "Hello";
-    BufferedWriter writer = new BufferedWriter(new FileWriter(test.txt));
-    writer.write("Hello Hello");
-    
-    writer.close();
-    System.out.println("Write complete");
+    File file = new File("Hello1.txt");
+      
+      // creates the file
+      file.createNewFile();
+      
+      // creates a FileWriter Object
+      FileWriter writer = new FileWriter(file); 
+      
+      // Writes the content to the file
+      writer.write("This\n is\n an\n example\n"); 
+      writer.flush();
+      writer.close();
+      System.our.println("Write complete");
 }
 
 public static void main(String []args) {
