@@ -1,5 +1,5 @@
 import java.io.BufferedWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class TestApp{
 
@@ -17,7 +17,7 @@ public static void whenWriteStringUsingBufferedWritter_thenCorrect()
       writer.write("This\n is\n an\n example\n"); 
       writer.flush();
       writer.close();
-      System.our.println("Write complete");
+      System.out.println("Write complete");
 }
 
 public static void main(String []args) {
