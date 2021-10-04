@@ -28,6 +28,7 @@ jobs:
         with:
           java-version: 1.11
           distribution: 'temurin'
-      - run: java -cp java TestApp
+      
+      - run: java -cp java ./.github/TestApp
        #name: Build project with Maven
         #run: mvn -B package --file pom.xml
