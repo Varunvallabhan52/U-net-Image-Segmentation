@@ -29,6 +29,7 @@ jobs:
           java-version: 1.11
           distribution: 'temurin'
       - run: echo $PWD
+      - run: echo ls
       - run: java -cp java ./.github/TestApp
        #name: Build project with Maven
         #run: mvn -B package --file pom.xml
